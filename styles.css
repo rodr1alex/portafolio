@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+:root{
+    --icon-size:100px;
+    --h1-color:black;
+    --h2-color: black;
+    --h3-color: pink;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.header__left{
+    margin-left: 80px;
+}
+.header__title{
+    color: var(--h2-color);
+}
+.sidenav{
+    margin-right: 80px;
+}
+.sidenav__list{
+    display: flex;
+}
+.sidenav__item-list{
+    list-style: none;
+    margin-left: 20px;
+}
+.sidenav__link{
+    text-decoration: none;
+}
+.sidenav__link:hover{
+    text-decoration: underline;
+}
+.boton1{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+.home{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background: radial-gradient(at 100% 50%, rgb(196, 104, 249) 1px, rgb(177, 123, 227) 10%, #FFF 50%);
+}
+.home__title{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.home__description{
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.home__proyects-link{
+    text-decoration: none;
+
+}
+
+.proyects{
+    background-color: rgb(40,40,40);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 30px;
+}
+.proyects__tittle{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.proyects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.proyect{    
+    background-color: #FFF;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.proyect__background{
+    width: 100%;
+}
+.proyect__info{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-rows: 4fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr ;
+    opacity: 0;
+}
+.proyect__info:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+.proyect__github-icon{
+    color: #FFF;
+    font-size: 40px;
+}
+.proyect__github-link{
+    width: min-content;
+    height: min-content;
+    align-self: flex-end;
+    justify-self: flex-start;
+    margin-bottom: 10px;
+}
+.proyect__title{
+    color: #FFF;
+}
+.proyect__description{
+    color: #FFF;
+}
+.proyect__technology-used{
+    display: flex;
+    flex-wrap: wrap;
+}
+.proyect__technology-name{
+    color: #FFF;
+    background-color: rgb(40,40,40);
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding-top: 4px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: 50px auto 0;
+}
+.portrait{
+    width: 30%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.portrait__about{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.portrait__name{
+    font-size: 32px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.portrait__photo{
+
+}
+.skillsList{
+
+}
+.skillsList{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+.skillsList ul{
+    display: flex;
+    flex-direction: row;
+}
+.portrait__photo{
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+}
+.description{
+    width: 60%;
+    height: 300px;
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.description__habilities{
+    margin-bottom: 20px;    
+}
+.description__title{
+    margin-bottom: 20px;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skill{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill__SVGicon{
+    width: 50px;
+    height: 50px;
+}
